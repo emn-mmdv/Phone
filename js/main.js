@@ -1,20 +1,31 @@
-stat = true
+stat = false 
 
 // Power
     function power(){
         if(stat==true){
-            document.querySelector('.power-down').classList.add('active')
+            document.querySelector('.power-down').classList.remove('active')
             setTimeout(()=>{stat = false},500)
         }else{
-            document.querySelector('.power-down').classList.remove('active')
-            setTimeout(()=>{stat = true},500)
+            powerdown()
         }
+    }
 
+    function powerdown(){
+        document.querySelector('.power-down').classList.add('active')
+        setTimeout(()=>{stat = true},500)
 
+        document.querySelector('.enterance').classList.remove('active')
     }
 
     function lock(){
-        document.querySelector('.enterance').classList.toggle('active')
+        if(stat!==false) {
+            document.querySelector('.enterance').classList.add('active')
+        }
+    }
+
+// Home button
+    function home(){
+        lock()
     }
 
 

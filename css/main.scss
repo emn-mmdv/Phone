@@ -18,6 +18,7 @@ body{
     width: 300px;
     height: 600px;
     padding: 0 5px;
+
     .top,.bottom{
         width: 100%;
         display: flex;
@@ -78,8 +79,6 @@ body{
             outline: 1px solid gray;
         }
     }
-
-    
 
     .screen{
         width: 100%;

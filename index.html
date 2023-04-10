@@ -32,14 +32,16 @@
                                 <span>Swipe to unlock</span>
                             </div>
                         </div>
-                        <div class="lock"></div>
+                        <div class="lock">
+                            <span onclick="cancel_lock()">Cancel</span>
+                        </div>
                     </div>
 
                     <div class="power-down"></div>
                 </div>
 
-            <div class="bottom" onclick="home()" style="height: 65px;">
-                <div class="home-btn"></div>
+            <div class="bottom" style="height: 65px;">
+                <div class="home-btn" onclick="home()"></div>
             </div>
 
             <!-- Buttons -->
@@ -51,4 +53,5 @@
 
 </body>
 <script src="js/main.js"></script>
+<script src="js/functions.js"></script>
 </html>

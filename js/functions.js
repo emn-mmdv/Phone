@@ -1,27 +1,34 @@
+stat = {
+    'lock': false,
+    'current_app': "home",
+} 
+
 // Power
-function power(){
-    if(stat==true){
-        document.querySelector('.power-down').classList.remove('active')
-        setTimeout(()=>{stat = false},500)
-    }else{
-        powerdown()
+    function power(){
+        if(stat.lock==true){
+            document.querySelector('.screen').classList.remove('active')
+            setTimeout(()=>{stat.lock = false},500)
+        }else{
+            powerdown()
+        }
     }
-}
 
-function powerdown(){
-    document.querySelector('.power-down').classList.add('active')
-    setTimeout(()=>{stat = true},500)
+    function powerdown(){
+        document.querySelector('.screen').classList.add('active')
+        setTimeout(()=>{stat.lock = true},500)
 
-    document.querySelector('.enterance').classList.remove('active')
-}
-
-function lock(){
-    if(stat!==false) {
-        document.querySelector('.enterance').classList.add('active')
+        document.querySelector('.enterance').classList.remove('active')
     }
-}
+
+    function lock(){
+        if(stat.lock!==false) {
+            document.querySelector('.enterance').classList.add('active')
+        }
+    }
+
+    
 
 // Home button
-function home(){
-    lock()
-}
+    function home(){
+        lock()
+    }

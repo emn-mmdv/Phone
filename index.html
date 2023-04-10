@@ -25,19 +25,17 @@
                         <div class="enterance">
                             <img src="img/background.jpg">
                             <div class="effect"></div>
-                            <div class="content">
+                            <div class="content" onclick="lock()">
                                 <div class="watch">
-                                    21:00
+                                    
                                 </div>
                                 <span>Swipe to unlock</span>
                             </div>
                         </div>
                         <div class="lock">
-                            <span onclick="cancel_lock()">Cancel</span>
+                            <span onclick="document.querySelector('.enterance').classList.remove('active')">Cancel</span>
                         </div>
                     </div>
-
-                    <div class="power-down"></div>
                 </div>
 
             <div class="bottom" style="height: 65px;">

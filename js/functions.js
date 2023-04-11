@@ -9,15 +9,14 @@ stat = {
             document.querySelector('.screen').classList.remove('active')
             setTimeout(()=>{stat.lock = false},500)
         }else{
-            powerdown()
+            document.querySelector('.screen').classList.add('active')
+            setTimeout(()=>{stat.lock = true},500)
+
+            document.querySelector('.enterance').classList.remove('active')
+
+            document.querySelector('.screen-lock').classList.remove('open')
+            document.querySelector('.screen-lock').style.display = 'block'
         }
-    }
-
-    function powerdown(){
-        document.querySelector('.screen').classList.add('active')
-        setTimeout(()=>{stat.lock = true},500)
-
-        document.querySelector('.enterance').classList.remove('active')
     }
 
     function lock(){

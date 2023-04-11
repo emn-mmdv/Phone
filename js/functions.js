@@ -10,7 +10,8 @@ stat = {
             setTimeout(()=>{stat.lock = false},500)
         }else{
             document.querySelector('.screen').classList.add('active')
-            setTimeout(()=>{stat.lock = true},500)
+            document.querySelector('.home').classList.add('deactive')
+            setTimeout(()=>{stat.lock = true;},500)
 
             document.querySelector('.enterance').classList.remove('active')
 

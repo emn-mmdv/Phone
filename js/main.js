@@ -37,6 +37,7 @@ let day = weekday[dat.getDay()];
                         }
                         document.querySelector('.screen-lock').classList.add('open')
                         setTimeout(()=>{document.querySelector('.screen-lock').style.display = 'none'},500)
+                        document.querySelector('.home').classList.remove('deactive')
                     },500)
                 }else{
                     document.querySelector('.code').classList.add('invaild')

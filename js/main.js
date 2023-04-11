@@ -34,7 +34,7 @@ const correct_code = '2023'
                         document.querySelectorAll('.code span')[i].classList.remove('active')
                         document.querySelector('.code').classList.remove('invaild')
 
-                        
+                        document.querySelector('.screen-lock').classList.add('open')
                     }},500)
                 }else{
                     document.querySelector('.code').classList.add('invaild')

@@ -245,42 +245,10 @@ body {
   color: whitesmoke;
   cursor: pointer;
 }
+.phone .screen .screen-lock.open {
+  animation: screen_lock_down 0.5s 1 forwards;
+}
 .phone .screen.active {
   filter: brightness(1);
   transition: filter 0.4s;
-}
-
-@keyframes text-color {
-  from {
-    background-position: right;
-  }
-  to {
-    background-position: left;
-  }
-}
-@keyframes dnone {
-  100% {
-    z-index: -1;
-  }
-}
-@keyframes lock-content {
-  100% {
-    opacity: 1;
-    transform: scale(1.2);
-    z-index: 3;
-  }
-}
-@keyframes invaild_code {
-  0%, 100% {
-    transform: translate(0px, 0);
-  }
-  25% {
-    transform: translate(-2px, 0);
-  }
-  50% {
-    transform: translate(2px, 0);
-  }
-  75% {
-    transform: translate(-2px, 0);
-  }
 }/*# sourceMappingURL=main.css.map */

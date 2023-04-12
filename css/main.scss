@@ -232,13 +232,26 @@ body{
                         $size: 12px;
                         width: $size;
                         height: $size;
-                        border: 2px solid $color;
                         border-radius: 50%;
                         transition: 0.5s;
+                        position: relative;
+                        border: $color 2px solid;
                     }
 
-                    span.active{
-                        background: $color;
+                    span::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        transition: 0.5s;
+                        border-radius: 50%;
+                    }
+
+                    span.active::after{
+                        background-color: $color;
+                        opacity: 0.75;
                     }
                 }
 

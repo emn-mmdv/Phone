@@ -4,103 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Iphone 5</title>
+    <link rel="stylesheet" href="css/animations.css">
+    <title>Phone</title>
 </head>
 <body>
 
-    <!-- Phone -->
-        <div class="phone">
-            <div class="top" style="height: 35px;">
+    <div class="phone">
+        <div class="inside">
+            <div class="top">
                 <div class="camera"></div>
-                <div class="speaker"></div>
             </div>
-            <!-- Screen -->
-                <div class="screen">
-                    <!-- Screen Lock -->
-                        <div class="screen-lock">
-                            <div class="enterance">
-                                <div class="effect"></div>
-                                <div class="content" onclick="lock()">
-                                    <div class="date">
-                                        <div class="watch">
-                                        
-                                        </div>
-                                        <h3></h3>
-                                    </div>
-                                    <span>Swipe to unlock</span>
-                                </div>
-                            </div>
-                            <div class="lock">
-                                <div class="code">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div class="pin">
-                                    <span onclick="add_number(this)">1</span>
-                                    <span onclick="add_number(this)">2</span>
-                                    <span onclick="add_number(this)">3</span>
-                                    <span onclick="add_number(this)">4</span>
-                                    <span onclick="add_number(this)">5</span>
-                                    <span onclick="add_number(this)">6</span>
-                                    <span onclick="add_number(this)">7</span>
-                                    <span onclick="add_number(this)">8</span>
-                                    <span onclick="add_number(this)">9</span>
-                                    <span></span>
-                                    <span onclick="add_number(this)">0</span>
-                                </div>
-                                <div class="alt-text">
-                                    <span>Emergency Call</span>
-                                    <span onclick="document.querySelector('.enterance').classList.remove('active')">Cancel</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    <div class="home deactive"> 
-                        <div class="apps">
-                            <app name="music"><img src="img/icons/app/music.png"></app>
-                            <app name="camera"></app>
-                            <app name="gallery"></app>
-                            <app name="settings"></app>
-                            
-                            <app name="weather"></app>
-                            <app name="notes"></app>
-                            <app name="calculator"></app>
-                            <app name="radio"></app>
-
-                            <app name=""></app>
-                            <app name=""></app>
-                            <app name=""></app>
-                            <app name=""></app>
-                        </div>
-                        <div class="fixed_apps">
-                            <app name="call"></app>
-                            <app name="safari"></app>
-                            <app name="messages"></app>
-                        </div>
-                    </div>
-                    <img class="bg-img" src="img/background.jpg">
-                </div>
-
-            <div class="bottom" style="height: 65px;">
-                <div class="home-btn" onclick="home()"></div>
+            <!-- Actual Screen -->
+            <div class="screen"></div>
+            <div class="bottom">
+                <div class="pages"></div>
+                <div class="home"></div>
+                <div class="back"></div>
             </div>
-
-            <!-- Buttons -->
-                <div class="button power" onclick="power()" style="top: 120px;right: -10px;"></div>
-                <div class="button sound down" style="top: 120px;left: -10px;"></div>
-                <div class="button sound up" style="top: 180px;left: -10px;"></div>
         </div>
 
+        <div class="buttons">
+            <div class="volume-up"></div>
+            <div class="volume-down"></div>
+            <div class="power" onmouseup="power()"></div>
+        </div>
+    </div>
 
 
+
+    
 </body>
+<script src="js/status.js"></script>
+<script src="js/assets.js"></script>
 <script src="js/main.js"></script>
-<script src="js/functions.js"></script>
+<script src="js/router.js" type="module"></script>
 </html>

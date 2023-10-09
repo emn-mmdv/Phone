@@ -1,0 +1,6 @@
+@keyframes power_off {
+    0%{opacity: 1;}
+    90%{opacity: 0;z-index: 999;}
+    100%{opacity: 0;z-index: -1;}
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>Phone</title>
+</head>
+<body>
+
+    <div class="phone">
+        <div class="inside">
+            <div class="top">
+                <div class="camera"></div>
+            </div>
+            <!-- Actual Screen -->
+            <div class="screen active">
+                <div class="app lock-screen">
+                    <div class="info">
+                        <div class="time">
+                            <span class="time"></span>
+                            <span class="day"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="pin"></div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="pages"></div>
+                <div class="home"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="volume-up"></div>
+            <div class="volume-down"></div>
+            <div class="power" onmouseup="power()"></div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+<script src="js/status.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/main.js"></script>
+<script src="js/router.js" type="module"></script>
+</html>
